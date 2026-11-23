@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chy Ranuth | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Add this line for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Chy Ranuth</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="container">
+    <img src="photo_2026-11-23_14-19-36.jpg" alt="Chy Ranuth" class="profile-pic" />
+    <h1>Hi, I'm <span>Chy Ranuth</span></h1>
+    <p>Technology Student at BELTEI International University • Developer & Founder of Ranuth Group</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
+  <section id="about" class="section container">
+    <h2>About Me</h2>
+    <p>
+      I am a first-year Technology undergraduate student at BELTEI International University based in Phnom Penh, Cambodia. 
+      Passionate about software development, e-commerce automation, and graphic design, I build practical web apps, 
+      Discord bots, and digital storefronts while running Ranuth Group and Ranuth Topup.
+    </p>
+  </section>
+
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Programming</h3>
+          <p>C++, C#, Python, HTML5, CSS3, JavaScript</p>
+        </div>
+        <div class="card">
+          <h3>Tools & Environment</h3>
+          <p>VS Code, Visual Studio, Git & GitHub, MinGW64</p>
+        </div>
+        <div class="card">
+          <h3>Web & E-Commerce</h3>
+          <p>Storefront Development, Payment Gateway Integration (KHQR / PayWay), Discord.py Bots</p>
+        </div>
+        <div class="card">
+          <h3>Creative & Design</h3>
+          <p>Adobe Photoshop, Poster & Logo Design, Social Media Branding</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2>Featured Projects</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="bots">Bots</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+
+    <!-- Project Cards -->
+    <div id="projects-grid" class="skills-grid">
+      <div class="card" data-category="web">
+        <span class="badge">Web Dev</span>
+        <h3>Ranuth Topup Storefront</h3>
+        <p>An instant game recharge web application built with HTML, JavaScript, and local payment checkout integration.</p>
+      </div>
+
+      <div class="card" data-category="bots">
+        <span class="badge">Bots</span>
+        <h3>Ranuth Group Discord Bot</h3>
+        <p>A custom Python bot built with <code>discord.py</code> featuring automated support tickets, role management, and reminders.</p>
+      </div>
+
+      <div class="card" data-category="design">
+        <span class="badge">Design</span>
+        <h3>Promotional & Festival Graphics</h3>
+        <p>High-resolution commercial posters and custom branding created in Adobe Photoshop.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>Based in Phnom Penh, Cambodia • Reach out directly on my socials:</p>
+      
+      <div class="social-links">
+        <a href="https://t.me/MrRanuth" target="_blank" class="social-btn telegram">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" class="social-btn github">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        
+      </div>
+
+      <p class="copyright">&copy; 2026 Chy Ranuth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
